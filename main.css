@@ -1,0 +1,120 @@
+@charset "utf-8";
+/*
+    CSS DOCUMENT - FOR Curriculum Vitae - João Esteves
+*/
+body,html{
+    height: 100%;
+    margin:0;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+/* ------ SIDEBAR NAVIGATION------- */
+.navigation_panel{
+    height:100%;
+    width: 18vw;
+    text-decoration: none;
+    /*background-color:rgba(0, 0, 0, 0.35);*/
+    position:fixed!important;
+    z-index:1;
+    opacity: 60%;
+    overflow: hidden; 
+}
+    /* - NAVIGATION Buttons -  */
+.btn{
+    width: 18vw;
+    height: 100%;
+    float: right;
+    clear: both;  
+    margin-top: 0.8vw;  
+    border: 0.191vw dotted whitesmoke;
+    background-color: rgba(0, 0, 0, 0.35);;
+    opacity: 60%;
+    z-index: 2;
+    position: relative;
+}
+
+#name{
+    float: both;
+    clear: both;
+    color: white;
+    margin-top: 0vw;
+    margin-bottom: -0.5vw;
+    font-size: 1.3vw;
+    z-index: 2;
+}
+.sidebar_name{
+    float: right;
+    position: relative;
+    text-align: :left;
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.5vw;
+    margin-right: 1vw ;
+    color:white;
+    text-decoration: bold;
+}
+
+.sidebar_icon{
+    width: 4vw;
+    height: 4vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+/*BUTTONS lANGUAGES*/
+#lang_pt{
+    background-image: url("../icons/Portugal.png");
+}
+#lang_en{
+    background-image: url("../icons/England.png");
+}
+.btn_lang{
+    width: 2.5vw;
+    height: 2vw ;
+    background-position: center;
+    float: left;
+    clear: right;
+    margin-left: 2.5vw;
+    padding-left:5px;
+    text-align:;
+    margin-top: 0.5vw;
+    margin-bottom: 0vw;
+    font-size: 1vw;
+    font-family:Arial, Helvetica, sans-serif; 
+    background-size: cover;
+    border: none;
+    opacity:;
+}
+/* -- BACKGROUND -- */
+    /* - Wrapper - */
+.wrapper_right{
+    margin-left:22vw;
+    margin-right: 4vw;
+    margin-top: 0vw;
+    height: 100%;
+    z-index: 1;
+}
+#about_me{
+    background-color: rgba(0, 0, 0, 0.467);
+}
+#home{
+    background-color: rgba(0, 0, 0, 0.467);
+}
+
+/* - Back- */
+.background{
+    background-size: cover;
+    width:100%;
+    height:100vh;
+    position: relative;
+    position:scroll;
+    z-index:0;
+}
+#background_home{
+    background-image: url("../Images/abstract-art-blur-417458.jpg");
+}
+#background_about{
+    background-image: url("../Images/blackboard-business-chalkboard-355988.jpg");
+}
