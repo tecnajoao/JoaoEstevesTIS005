@@ -47,7 +47,7 @@ a{
 .sidebar_name{
     float: right;
     position: relative;
-    text-align: :left;
+    text-align: left;
     font-size: 1.5vw;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 1.5vw;
@@ -78,14 +78,12 @@ a{
     clear: right;
     margin-left: 2.5vw;
     padding-left:5px;
-    text-align:;
     margin-top: 0.5vw;
     margin-bottom: 0vw;
     font-size: 1vw;
     font-family:Arial, Helvetica, sans-serif; 
     background-size: cover;
     border: none;
-    opacity:;
 }
 /* -- BACKGROUND -- */
     /* - Wrapper - */
@@ -113,8 +111,8 @@ a{
     z-index:0;
 }
 #background_home{
-    background-image: url("../Images/abstract-art-blur-417458.jpg");
+    background-image: url("../_img/abstract-art-blur-417458.jpg");
 }
 #background_about{
-    background-image: url("../Images/blackboard-business-chalkboard-355988.jpg");
+    background-image: url("../_img/blackboard-business-chalkboard-355988.jpg");
 }
