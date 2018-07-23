@@ -65,10 +65,10 @@ a{
 
 /*BUTTONS lANGUAGES*/
 #lang_pt{
-    background-image: url("../icons/Portugal.png");
+    background-image: url("icons/Portugal.png");
 }
 #lang_en{
-    background-image: url("../icons/England.png");
+    background-image: url("icons/England.png");
 }
 .btn_lang{
     width: 2.5vw;
