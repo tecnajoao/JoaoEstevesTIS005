@@ -12,55 +12,86 @@ a{
 }
 /* ------ SIDEBAR NAVIGATION------- */
 .navigation_panel{
+    width: 16vw;
     height:100%;
-    width: 18vw;
     text-decoration: none;
-    /*background-color:rgba(0, 0, 0, 0.35);*/
+    /*background-color:rgba(0, 0, 0, 0.404);*/
     position:fixed !important;
-    z-index: 1;
-    opacity: 60%;
+    z-index: 2;
     overflow: hidden; 
+}
+#sidebar_black{
+    width: 6.35vw;
+    height: 100%;
+    background-color:rgb(0, 0, 0);
+    position:fixed !important;
+    z-index: 2;
 }
     /* - NAVIGATION Buttons -  */
 .btn{
-    width: 18vw;
+    width: 6vw; /*PASSAR PARA 6VW E COLOR BLACK*/
     height: 100%;
-    float: right;
-    clear: both;  
-    margin-top: 0.8vw;  
-    border: 0.191vw dotted whitesmoke;
-    background-color: rgba(0, 0, 0, 0.35);;
-    opacity: 60%;
-    z-index: 2;
+    z-index: 3;
     position: relative;
+    margin-top:0.8vw;
+}
+.btn_menu:hover{
+    background-color: rgb(0,0,0,0.451);
+    width: 14vw;
+    -webkit-transition: width 2s; /* Safari */
+    -webkit-transition-timing-function: linear; /* Safari */
+    transition: width 0.5s;
+    transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+
+.btn_menu:hover .sidebar_name{
+    opacity: 1;
+}
+
+.btn_menu{
+    background-color: rgba(0, 0, 0);
+    float: left;
+    clear: left; 
 }
 
 #name{
-    float: both;
-    clear: both;
     color: white;
-    margin-top: 0vw;
-    margin-bottom: -0.5vw;
+    margin-top: -0.4vw;
+    margin-bottom: 1.1vw;
     font-size: 1.3vw;
-    z-index: 2;
+    z-index: 3;
 }
 .sidebar_name{
+    color: white;
     float: right;
     position: relative;
     text-align: left;
     font-size: 1.5vw;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 1.5vw;
-    margin-right: 1vw ;
-    color:white;
-    text-decoration: bold;
+    margin-top: 2vw;
+    margin-right: 0;
+    opacity: 0;
+    font-weight: bold;
 }
-
+.sidebar_logo{
+    width: 4.5vw;
+    height: 4.5vw;
+    margin-left: 1.1vw;
+    margin-top: 0vw;
+    margin-bottom: 0.5vw;
+    border: none;
+}
 .sidebar_icon{
-    width: 4vw;
-    height: 4vw;
-    margin-left: 1vw;
-    margin-top: 1vw;
+    width: 4.5vw;
+    height: 4.5vw;
+    margin-left: 0.8vw;
+    margin-top: 0.5vw;
+    clear:left;
+    z-index: 3;
+    float: left;
+    background-color: black;
+    position: fixed !important;
 }
 
 /*BUTTONS lANGUAGES*/
@@ -74,16 +105,19 @@ a{
     width: 2.5vw;
     height: 2vw ;
     background-position: center;
+    position: relative;
     float: left;
-    clear: right;
-    margin-left: 2.5vw;
+    clear: left;
+    margin-left: 1.5vw;
     padding-left:5px;
-    margin-top: 0.5vw;
+    margin-top: 2vw;
     margin-bottom: 0vw;
     font-size: 1vw;
     font-family: Arial, Helvetica, sans-serif; 
     background-size: cover;
     border: none;
+    z-index: 3;
+   
 }
 /* -- BACKGROUND -- */
     /* - Wrapper - */
@@ -93,22 +127,25 @@ a{
     margin-top: 0vw;
     height: 100%;
     z-index: 1;
+    filter: blur(0px);
 }
 #about_me{
-    background-color: rgba(0, 0, 0, 0.467);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 #home{
-    background-color: rgba(0, 0, 0, 0.467);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* - Back- */
+
 .background{
     background-size: cover;
     width:100%;
     height:100vh;
     position: relative;
     position:scroll;
-    z-index:0;
+    z-index:1;
+    
 }
 #background_home{
     background-image: url("img/abstract-art-blur-417458.jpg");
