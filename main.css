@@ -93,7 +93,6 @@ a{
     clear:left;
     z-index: 3;
     float: left;
-    
     position: fixed !important;
 }
 
