@@ -6,42 +6,38 @@
     <title>João Esteves</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./my_scripts/script.js"></script>
 </head>
     <body>
         <!-- PAINEL DE NAVEGAÇÃO -->
-    
         <nav class="navigation_panel">
             <!-- BOTOES DE NAVEGAÇÃO -->
             <div id="sidebar_black">
             </div>
-            <div class="sidebar_btn">
-                <a class="btn">
-                    <img class="sidebar_logo" src="icons/tecnajoao_logo.png">
-                    <p  id="name">Tecna_João</p>
-                </a>
-                <a class="btn btn_menu"  href="en/homepage/homepage.html" target="frame">
-                    <img class="sidebar_icon" src="icons/Home.png">
+            <div class="sidebar_btn" id="navigation_buttons_panel">
+                <a href="#homepage" class="btn_script btn btn_menu first_btn first_btn_script"  >
+                    <img class="sidebar_icon icon_home" src="icons/Home.png">
                     <p class="sidebar_name">Home</p>
                 </a>
-                <a class="btn btn_menu" target="frame" href="en/about/about.html">
-                    <img class="sidebar_icon" src="icons/About.png">
+                <a class="btn btn_menu"  href="#about_me">
+                    <img class="sidebar_icon icon_about" src="icons/About.png">
                     <p class="sidebar_name">About</p>
                 </a>
-                <a class="btn btn_menu" target="frame" href="en/skills/skills.html">
-                    <img class="sidebar_icon" src="icons/Skills.png">
+                <a class="btn btn_menu"  href="#skills">
+                    <img class="sidebar_icon icon_skills" src="icons/Skills.png">
                     <p class="sidebar_name">Skills</p>
                 </a>
-                <a class="btn btn_menu" target="frame" href="en/experience/experience.html">
-                    <img class="sidebar_icon" src="icons/Experience.png">
+                <a class="btn btn_menu"  href="#experience">
+                    <img class="sidebar_icon icon_experience" src="icons/Experience.png">
                     <p class="sidebar_name">Experience</p>
                 </a>
-                <a class="btn btn_menu" target="frame" href="en/formation/formation.html">
-                    <img class="sidebar_icon" src="icons/Formation.png">
-                    <p class="sidebar_name">Formation</p>
+                <a class="btn btn_menu"  href="#education">
+                    <img class="sidebar_icon icon_education" src="icons/Formation.png">
+                    <p class="sidebar_name">Education</p>
                 </a>
-                <a class="btn btn_menu" target="frame" href="#">
-                    <img class="sidebar_icon" src="icons/Resume.png">
+                <a class="btn btn_menu"  href="#download_cv">
+                    <img class="sidebar_icon icon_cv" src="icons/Resume.png">
                     <p class="sidebar_name">CV</p>
                 </a>
                 <a class="btn btn_lang" id="lang_pt" href="#" >
@@ -50,6 +46,51 @@
                 </a>-->
             </div>
         </nav>
-        <iframe name="frame" class="frame_right" target=""></iframe>
+        <!--HOMEPAGE HTML-->
+        <section class="background_homepage" id="homepage">
+            <div class="sidebar_logo"></div>
+            <div class="wrapper_right_home font_pages" id="home">
+                    <span class="title_size_font_home">Hello ! <br> I'm João Esteves.</span>
+                        <!--<p class="intro_paragraph_home_size_font">
+                        </p>-->
+                </div>
+                <div class="wrapper_right_home wrapper_btn_bottom_home text_align_color">
+                    <a class="btns_home contact_me font_pages" href="#contact_me">
+                        Contact Me !
+                    </a>
+                    <a class="btns_home download_cv font_pages" href="#download_cv">
+                        Download CV !
+                    </a>
+                </div>
+        </section>
+        <!--ABOUT ME HTML-->
+        <section class="background_about_me" id="about_me" >
+            <div class="font_pages titles_size font_pages titles_size wrapper_center">
+                <div>ABOUT ME</div>
+                <div id="photo_about"></div>
+                <div id="font_size_text">Hello ! I'm João Esteves, and i'm 23 yeas old. Actualy i'm studying in an IT course what is equivalent to the 12th grade. I love so much programming, computers and all technology forms. </div>
+            </div>
+        </section>
+        <!--Skills HTML-->
+        <section class="background_skills" id="skills">
+                <div class="font_pages titles_size wrapper_center">SKILLS</div>
+        </section>
+        <!--Experience HTML-->
+        <section class="background_experience" id="experience" >
+                <div class="font_pages titles_size wrapper_center">EXPERIENCES</div>
+        </section>
+        <!--Education HTML-->
+        <section class="background_education" id="education" >
+                <div class="font_pages titles_size wrapper_center">EDUCATION</div>
+        </section>
+        <!--CV DOWNLOAD PAGE HTML-->
+        <section class="background_cv" id="download_cv">
+                <div class="font_pages titles_size wrapper_center">DOWNLOAD CV</div>
+        </section>
+        <section class="background_contact_me" id="contact_me">
+                <div class="font_pages titles_size wrapper_center">CONTACT ME</div>
+        </section>
+        <!--Footer TecnaJoao-->
+        <footer class="font_pages footer_site"></footer>
     </body>
 </html>
