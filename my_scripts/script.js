@@ -13,19 +13,14 @@ $(document).ready(function(){
          }, 1000, 'linear');
      });
 });
-
 /*
-var navigation_div=document.getElementById("navigation_buttons_panel");
+var navigation_div = document.getElementById("navigation_buttons_panel");
 var nav_buttons = navigation_div.getElementsByClassName("btn_script");
-var initial_var = 0;
-for(initial_var; initial_var < nav_buttons.length; initial_var++){
+for( var initial_var = 0; initial_var < nav_buttons.length; initial_var++){
     nav_buttons[initial_var].addEventListener("click", 
-    function(state){
-        state.preventDefault;
-        var actual_state = $(this).getElementsByClassName("first_btn_script");
-            actual_state[0].className =
-            actual_state[0].className.replace("first_btn_script", "");
+    function(){
+        var actual_state = document.getElementsByClassName("first_btn_script");
+            actual_state[0].className = actual_state[0].className.replace("first_btn_script",  "");
             this.className += "first_btn_script";
     });
-}
-*/
+}*/
