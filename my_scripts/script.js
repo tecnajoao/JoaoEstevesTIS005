@@ -13,8 +13,8 @@ $(document).ready(function(){
          }, 1000, 'linear');
      });
 });
-/*
-var navigation_div = document.getElementById("navigation_buttons_panel");
+
+/*var navigation_div = document.getElementById("navigation_buttons_panel");
 var nav_buttons = navigation_div.getElementsByClassName("btn_script");
 for( var initial_var = 0; initial_var < nav_buttons.length; initial_var++){
     nav_buttons[initial_var].addEventListener("click", 
@@ -24,3 +24,10 @@ for( var initial_var = 0; initial_var < nav_buttons.length; initial_var++){
             this.className += "first_btn_script";
     });
 }*/
+function selected(n){
+var nav_buttons = document.getElementsByClassName("first_btn_script");
+for(var i=0; i < nav_buttons.length; i++){
+    nav_buttons[i].className = nav_buttons[i].className.replace(" active","");
+}
+nav_buttons.className += "active";
+}
