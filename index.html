@@ -7,7 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./my_scripts/script.js"></script>
+    <script type="text/javascript" src="./my_scripts/script_parallax.js"></script>
+    <!--script type="text/javascript" src="./my_scripts/slideshow_animation.js">;</script>-->
+    <script>
+        //This code is provisory
+        var slideIndex = 1 ;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides_experience");
+        var circles_selected = document.getElementsByClassName("circles_select");
+        if (n > slides.length)
+        {slideIndex = 1}    
+        if (n < 1)
+        {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < circles_selected.length; i++) {
+            circles_selected[i].className = circles_selected[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "flex";  
+        circles_selected[slideIndex-1].className += " active";
+    }
+    </script>
 </head>
     <body>
         <!-- PAINEL DE NAVEGAÇÃO -->
@@ -16,34 +48,32 @@
             <div id="sidebar_black">
             </div>
             <div class="sidebar_btn" >
-                <a href="#homepage" class="btn_script btn btn_menu first_btn first_btn_script"  >
+                <a href="#homepage" class="btn_script btn ease_btn btn_menu first_btn first_btn_script"  >
                     <img class="sidebar_icon icon_home" src="icons/Home.png">
                     <p class="sidebar_name">Home</p>
                 </a>
-                <a class="btn btn_menu first_btn_script "  href="#about_me">
+                <a class="btn ease_btn btn_menu  "  href="#about_me">
                     <img class="sidebar_icon icon_about" src="icons/About.png">
                     <p class="sidebar_name">About</p>
                 </a>
-                <a class="btn btn_menu first_btn_script "  href="#skills">
+                <a class="btn ease_btn btn_menu  "  href="#skills">
                     <img class="sidebar_icon icon_skills" src="icons/Skills.png">
                     <p class="sidebar_name">Skills</p>
                 </a>
-                <a class="btn btn_menu first_btn_script "  href="#experience">
+                <a class="btn ease_btn btn_menu  "  href="#experience">
                     <img class="sidebar_icon icon_experience" src="icons/Experience.png">
                     <p class="sidebar_name">Experience</p>
                 </a>
-                <a class="btn btn_menu first_btn_script "  href="#education">
+                <a class="btn ease_btn btn_menu  "  href="#education">
                     <img class="sidebar_icon icon_education" src="icons/Formation.png">
                     <p class="sidebar_name">Education</p>
                 </a>
-                <a class="btn btn_menu first_btn_script "  href="#download_cv">
+                <a class="btn ease_btn btn_menu  "  href="#download_cv">
                     <img class="sidebar_icon icon_cv" src="icons/Resume.png">
                     <p class="sidebar_name">CV</p>
                 </a>
-                <a class="btn btn_lang" id="lang_pt" href="#" >
+                <a class="btn ease_btn btn_lang" id="lang_pt" href="#" >
                 </a>
-               <!-- <a class="btn_lang" id="lang_en" href="#" >
-                </a>-->
             </div>
         </nav>
         <!--HOMEPAGE HTML-->
@@ -55,10 +85,10 @@
                         </p>-->
                 </div>
                 <div class="wrapper_right_home wrapper_btn_bottom_home text_align_color">
-                    <a class="btns_home contact_me font_pages" href="#contact_me">
+                    <a class="btns_home ease_btn contact_me font_pages" href="#contact_me">
                         Contact Me !
                     </a>
-                    <a class="btns_home download_cv font_pages" href="#download_cv">
+                    <a class="btns_home ease_btn download_cv font_pages" href="#download_cv">
                         Download CV !
                     </a>
                 </div>
@@ -75,14 +105,14 @@
         <section class="background_skills" id="skills">
             <div class="wrapper_center">
                 <div class="font_pages titles_size ">SKILLS</div>
-                <div class="container font_pages">
+                <div class="container_skills font_pages">
                     <div class="skills hardware">
                         <div class="skills_logo" id="hardware_logo"></div>
                         <div class="percentage_skills">96%</div>
                         <div class="font_pages" id="center_title">Hardware</div>
                         </div>
                     </div>
-                    <div class="little_space_skills"></div>
+                    <div class="little_space"></div>
                     <div class="container font_pages">
                         <div class="skills office">
                             <div class="skills_logo" id="office_logo"></div>
@@ -90,7 +120,7 @@
                             <div class="font_pages" id="center_title">Microsoft Office</div>
                         </div>
                     </div>
-                    <div class="little_space_skills"></div>
+                    <div class="little_space"></div>
                     <div class="container font_pages">
                         <div class="skills html">
                             <div class="skills_logo" id="html_logo"></div>
@@ -98,7 +128,7 @@
                             <div class="font_pages" id="center_title">HTML</div>
                         </div>
                     </div>
-                    <div class="little_space_skills"></div>
+                    <div class="little_space"></div>
                     <div class="container font_pages">
                         <div class="skills css">
                             <div class="skills_logo" id="css_logo"></div>
@@ -106,7 +136,7 @@
                             <div class="font_pages" id="center_title">CSS</div>
                         </div>
                     </div>
-                    <div class="little_space_skills"></div>
+                    <div class="little_space"></div>
                     <div class="container font_pages">
                         <div class="skills java">
                             <div class="skills_logo" id="java_logo"></div>
@@ -114,7 +144,7 @@
                             <div class="font_pages" id="center_title">Java</div>
                         </div>
                     </div>
-                    <div class="little_space_skills"></div>
+                    <div class="little_space"></div>
                     <div class="container font_pages">
                         <div class="skills languages_c">
                             <div class="skills_logo"   id="languages_c_logo"></div>
@@ -122,7 +152,7 @@
                             <div class="font_pages" id="center_title">C, C++ & C#</div>
                          </div>
                     </div>
-                    <div class="little_space_skills"></div>
+                    <div class="little_space"></div>
                     <div class="container font_pages">
                         <div class="skills databases">
                             <div class="skills_logo"   id="databases_logo"></div>
@@ -130,7 +160,7 @@
                             <div class="font_pages" id="center_title">Databases</div>
                          </div>
                     </div>
-                    <div class="little_space_skills"></div>
+                    <div class="little_space"></div>
                     <div class="container font_pages">
                         <div class="skills js">
                             <div class="skills_logo" id="js_logo"></div>
@@ -138,7 +168,7 @@
                             <div class="font_pages" id="center_title" id="center_title">JavaScript</div>
                         </div>
                     </div>
-                    <div class="little_space_skills"></div>
+                    <div class="little_space"></div>
                     <div class="container font_pages">
                         <div class="skills php">
                             <div class="skills_logo" id="php_logo"></div>
@@ -150,10 +180,51 @@
         </section>
         <!--Experience HTML-->
         <section class="background_experience" id="experience" >
-                <div class="font_pages titles_size wrapper_center">EXPERIENCES</div>
-                <div>
-
+            <div class="wrapper_center">
+                <div class="font_pages titles_size ">EXPERIENCE</div>
+                <div class="slideshow_container_experience">
+                    <a class="prev_btn_expe ease_btn" id="prev_btn_left" onclick="plusSlides(-1)">«</a>
+                    <a class="next_btn_expe ease_btn" id="next_btn_right" onclick="plusSlides(1)">»</a>
+                    <div class="slides_experience fade">
+                        <a class="background_experience_case experience_1" >
+                            <div class="title_experience">TITLE 1: EXPERIENCE 1</div>
+                            <div class="caption_experience">Caption Text</div>
+                        </a>
+                    </div>
+                    <div class="slides_experience fade">
+                        <a class="background_experience_case experience_2" >
+                            <div class="title_experience">TITLE 2: EXPERIENCE 2</div>
+                            <div class="caption_experience">Caption Text</div>
+                        </a>
+                    </div>
+                    <div class="slides_experience fade">
+                        <a class="background_experience_case experience_3" >
+                                <div class="title_experience">TITLE 3: EXPERIENCE 3</div>
+                                <div class="caption_experience">Caption Text</div>
+                        </a>
+                    </div>
+                    <div class="slides_experience fade">
+                        <a class="background_experience_case experience_4" >
+                                <div class="title_experience">TITLE 4: EXPERIENCE 4</div>
+                                <div class="caption_experience">Caption Text</div>
+                        </a>
+                    </div>
+                    <div class="slides_experience fade">
+                        <a class="background_experience_case experience_5" >
+                                <div class="title_experience">TITLE 5: EXPERIENCE 5</div>
+                                <div class="caption_experience">Caption Text</div>
+                        </a>
+                    </div>
                 </div>
+ <!---------------------------------------------------------------------------------------- The dots/circles ----------->
+                <div class="all_circles_select">
+                    <span class="circles_select ease_btn" onclick="currentSlide(1)"></span>
+                    <span class="circles_select ease_btn" onclick="currentSlide(2)"></span>
+                    <span class="circles_select ease_btn" onclick="currentSlide(3)"></span>
+                    <span class="circles_select ease_btn" onclick="currentSlide(4)"></span>
+                    <span class="circles_select ease_btn" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
         </section>
         <!--Education HTML-->
         <section class="background_education" id="education" >
@@ -167,6 +238,12 @@
                 <div class="font_pages titles_size wrapper_center">CONTACT ME</div>
         </section>
         <!--Footer TecnaJoao-->
-        <footer class="font_pages footer_site"></footer>
+        <footer class="font_pages footer_site">
+            @PowerBy: TecnaJoao
+            <div id="date"></div>
+            <script>
+                document.getElementById("date").innerHTML = Date();
+            </script>
+        </footer>
     </body>
 </html>
