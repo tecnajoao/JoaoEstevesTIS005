@@ -11,8 +11,8 @@
     <!--script type="text/javascript" src="./my_scripts/slideshow_animation.js">;</script>-->
     <script>
         //This code is provisory
-        var slideIndex = 1 ;
-        showSlides(slideIndex);
+        var slideIndex = 0 ;
+        showSlides();
         
         function plusSlides(n) {
             showSlides(slideIndex += n);
@@ -22,10 +22,10 @@
             showSlides(slideIndex = n);
         }
 
-    function showSlides(n) {
-        var i;
         var slides = document.getElementsByClassName("slides_experience");
         var circles_selected = document.getElementsByClassName("circles_select");
+    function showSlides(n) {
+        var i;
         if (n > slides.length)
         {slideIndex = 1}    
         if (n < 1)
@@ -36,7 +36,12 @@
         for (i = 0; i < circles_selected.length; i++) {
             circles_selected[i].className = circles_selected[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "flex";  
+        slideIndex++;
+        if(slideIndex > slides.length){
+            slideIndex = 1 ;
+        }
+        slides[slideIndex-1].style.display = "flex"; 
+        setTimeout(showSlides, 20) ;
         circles_selected[slideIndex-1].className += " active";
     }
     </script>
@@ -185,7 +190,7 @@
                 <div class="slideshow_container_experience">
                     <a class="prev_btn_expe ease_btn" id="prev_btn_left" onclick="plusSlides(-1)">«</a>
                     <a class="next_btn_expe ease_btn" id="next_btn_right" onclick="plusSlides(1)">»</a>
-                    <div class="slides_experience fade">
+                    <div class="slides_experience fade ">
                         <a class="background_experience_case experience_1" >
                             <div class="title_experience">TITLE 1: EXPERIENCE 1</div>
                             <div class="caption_experience">Caption Text</div>
@@ -218,11 +223,11 @@
                 </div>
  <!---------------------------------------------------------------------------------------- The dots/circles ----------->
                 <div class="all_circles_select">
+                    <span class="circles_select ease_btn" onclick="currentSlide(0)"></span>
                     <span class="circles_select ease_btn" onclick="currentSlide(1)"></span>
                     <span class="circles_select ease_btn" onclick="currentSlide(2)"></span>
                     <span class="circles_select ease_btn" onclick="currentSlide(3)"></span>
                     <span class="circles_select ease_btn" onclick="currentSlide(4)"></span>
-                    <span class="circles_select ease_btn" onclick="currentSlide(5)"></span>
                 </div>
             </div>
         </section>

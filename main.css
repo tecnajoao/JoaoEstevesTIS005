@@ -89,9 +89,6 @@ section{
 #lang_pt{
     background-image: url("icons/Portugal.png");
 }
-#lang_en{
-    background-image: url("icons/England.png");
-}
 .btn_lang{
     width: 2.5vw;
     height: 2vw ;
@@ -261,7 +258,7 @@ section{
     z-index: 3;
 }
 .slides_experience{
-    display: none;
+    height: 100%;
 }
 .next_btn_expe, .prev_btn_expe{
     position: absolute;
@@ -310,15 +307,21 @@ section{
     background-color:rgba(0, 0, 0, 0.548);
 }
 .background_experience_case{
-    position: relative;
+    position: unset;
     z-index: 4;
     background-size:cover;
+    background-position: center;    
     width: 100%;
-    height: 50vw;
-    opacity: 0.5;
+    opacity: 0.8;
+}
+.title_experience{
+    z-index: 5;
+}
+.caption_experience{
+    z-index: 5;
 }
 .experience_1{
-    background-image: url("./img/image1.jpg");
+    background-image: url("./img/code_code.png");
 }
 .experience_2{
     background-image: url("./img/image2.jpg");
