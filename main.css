@@ -103,14 +103,11 @@ section{
     font-family: Arial, Helvetica, sans-serif; 
     background-size: cover;
     border: none;
-    
-    
 }
 .btn_lang:hover, .btns_home:hover{
     filter:brightness(150%);
 }
 /*TITLES CSS*/
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 .font_pages{
     font-family:'Indie Flower', cursive;
     text-align: center;
@@ -343,9 +340,93 @@ section{
 .background_cv{
     background-image: url("./img/adult-books-business-374016.jpg");
 }
+#cv_pt_wrapper{
+    float: left;
+   margin-left:2vw;
+}
+.gradient_filter{
+    border: 2vw;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,0.5));
+}
+.download_cv_box{
+    margin-left: 1.5vw;
+    margin-top:0.5vw;
+    width: 90%;
+    height: 85%;
+}
+.cv_wrapper{
+    width: 34vw;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.5));
+}
+#cv_en_wrapper{
+    margin-right: 2vw;
+    float: right;
+}
+.font_resume{
+    font-size: 2vw;
+}
+.english_resume_image{
+    background-image: url("./cv/resume_english_joao_image.png");
+}
+.portuguese_resume_image{
+    background-image: url("./cv/resume_portuguese_joao_image.png");
+}
 /*CONTACT ME CSS SECTION*/
 .background_contact_me{
     background-image: url("./img/art-artist-blur-436775.jpg");
+}
+.contact_wrapper{
+    float:left;
+    margin-left: 2vw;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 2vw;
+    border: 0.09vw solid aqua;
+    z-index: 4;
+    position: relative;
+}
+/*****email form code css*****/
+#email_field{
+    margin-top: 0.6vw;
+    
+}
+#name_field{
+    margin-top:0.6vw; 
+}
+#subject_field{
+    margin-top:0.6vw; 
+}
+#subtitles_contact{
+    font-size: 2.5vw;
+}
+.post_form{
+    border-radius: 1vw;
+    border: 0.09vw solid aqua;
+    width: 90%;
+    margin-left:1.5vw;  
+    height: 2vw;
+    text-align: center;
+    color: aqua;
+    background-color: rgba(123, 46, 224, 0.075);
+    
+}
+#message_field{
+  height: 11vw; 
+  margin-top:0.6vw; 
+  resize: none;
+}
+.button_form{
+    width: 15vw;
+    height: 2.5vw;;
+    margin-top:0.6vw;
+    margin-left:11vw;
+    border-radius: 2vw;
+    position: relative;
+}
+#contact_title{
+    margin-bottom: 2vw;
 }
 /*FOOTER SITE CSS*/
 .footer_site{
@@ -367,6 +448,3 @@ section{
 }
 /*TESTS*/
 /* Slideshow container */
-
-  
-  

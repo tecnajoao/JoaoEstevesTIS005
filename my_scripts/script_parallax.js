@@ -13,4 +13,12 @@ $("a[href*='#']").on('click', function (event) {
          scrollTop: $(get_id).offset().top
          }, 1000, 'linear');
      });
+     /*$("form[name='myform_contact']").ready(function validateForm() {
+        var x ;
+        x = document.forms["myform_contact"]["email"]["name"]["subject"]["message"].value;
+        if (x == " " || x == "") {
+            alert("ERROR TEST");
+            return false;
+        }
+    });*/
 });
