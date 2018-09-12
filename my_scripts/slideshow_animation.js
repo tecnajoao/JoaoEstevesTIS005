@@ -1,7 +1,5 @@
-var experience = document.getElementById("experience_script");
-experience.addEventListener("onload", experiences_script );
-function experiences_script(){
-    var slideIndex = 0 ;
+document.addEventListener("DOMContentLoaded", function(){
+    var slideIndex = 1 ;
     showSlides(slideIndex);
     
     function plusSlides(n) {
@@ -12,7 +10,7 @@ function experiences_script(){
         showSlides(slideIndex = n);
     }
 
-  function showSlides(n) {
+function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("slides_experience");
     var circles_selected = document.getElementsByClassName("circles_select");
@@ -28,6 +26,7 @@ function experiences_script(){
     }
     slides[slideIndex-1].style.display = "flex";  
     circles_selected[slideIndex-1].className += " active";
-  }
-}
+};
+});
+
 

@@ -6,6 +6,7 @@ body,html{
     height: 100%;
     margin:0;
 }
+
 a{
     text-decoration: none;
     
@@ -29,6 +30,7 @@ section{
     position: fixed !important;
     z-index: 2;
     overflow: hidden; 
+
 }
 #sidebar_black{
     width: 5vw;
@@ -112,6 +114,7 @@ section{
     font-family:'Indie Flower', cursive;
     text-align: center;
     color:white;
+    
 }
 .titles_size{
     font-size: 5vw;
@@ -345,7 +348,6 @@ section{
    margin-left:2vw;
 }
 .gradient_filter{
-    border: 2vw;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,0.5));
 }
 .download_cv_box{
