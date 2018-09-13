@@ -33,9 +33,9 @@ section{
 
 }
 #sidebar_black{
-    width: 5vw;
-    margin-top:9vw;
-    height: 38vw;
+    width: 35%;
+    margin-top:60%;
+    height: 36vw;
     background-color: rgba(0, 0, 0, 0.418);
     position: absolute !important;
     z-index: 2;
@@ -58,7 +58,7 @@ section{
 }
 .btn_menu:hover{
     background-color: rgba(102, 98, 98, 0.451);
-    width: 14vw;
+    width: 100%;
     -webkit-transition: width 0.5s; /* Safari */
     -webkit-transition-timing-function: linear; /* Safari */
     transition: width 0.5s;
@@ -87,7 +87,7 @@ section{
     z-index: 3;
     position: fixed !important;
 }
-/*BUTTONS lANGUAGES*/
+/*BUTTONS lANGUAGES
 #lang_pt{
     background-image: url("icons/Portugal.png");
 }
@@ -108,7 +108,7 @@ section{
 }
 .btn_lang:hover, .btns_home:hover{
     filter:brightness(150%);
-}
+}*/
 /*TITLES CSS*/
 .font_pages{
     font-family:'Indie Flower', cursive;
@@ -348,31 +348,54 @@ section{
    margin-left:2vw;
 }
 .gradient_filter{
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,0.5));
+    height: 100%;
+    width: 100%;
+    margin:auto;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.9));
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.gradient_filter:hover{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,1));
+    transition: background-image 0.6s;
+    cursor: pointer;
 }
 .download_cv_box{
-    margin-left: 1.5vw;
-    margin-top:0.5vw;
-    width: 90%;
-    height: 85%;
+    background-image: url("./cv/resume_english_joao_image.png");
+    margin:auto;
+    margin-top:5%;
+    background-size: cover;
+    width: 80%;
+    height: 70%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 .cv_wrapper{
-    width: 34vw;
-    height: 80%;
+    width: 65%;
+    height: 89%;
     background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.5));
 }
 #cv_en_wrapper{
-    margin-right: 2vw;
-    float: right;
+   margin: auto;
 }
 .font_resume{
     font-size: 2vw;
 }
-.english_resume_image{
-    background-image: url("./cv/resume_english_joao_image.png");
-}
-.portuguese_resume_image{
-    background-image: url("./cv/resume_portuguese_joao_image.png");
+
+.something_download{
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-top:-14%;
+    text-align: center;
+    font-size: 3vw;
+    padding: 2% 5% 5% 2%;
+    text-decoration: none;
+    color:white;
+    display: inline-table;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.6));
+   
 }
 /*CONTACT ME CSS SECTION*/
 .background_contact_me{
@@ -380,19 +403,18 @@ section{
 }
 .contact_wrapper{
     float:left;
-    margin-left: 2vw;
-    width: 50%;
-    height: 50%;
+    margin-left: 5%;
+    width: 30%;
+    height: 35%;
     background-color: rgba(255, 255, 255, 0.212);
     border-radius: 2vw;
     border: 0.09vw solid aqua;
-    z-index: 4;
-    position: relative;
+    z-index: 10;
+    position: absolute;
 }
 /*****email form code css*****/
 #email_field{
     margin-top: 0.6vw;
-    
 }
 #name_field{
     margin-top:0.6vw; 
@@ -407,41 +429,40 @@ section{
     border-radius: 1vw;
     border: 0.09vw solid aqua;
     width: 90%;
-    margin-left:1.5vw;  
-    height: 2vw;
+    margin-top: 20%;
+    margin-left:3.8%;  
     text-align: center;
     color: aqua;
     background-color: rgba(123, 46, 224, 0.075);
-    
 }
 #message_field{
-  height: 11vw; 
+  height: 29%; 
   margin-top:0.6vw; 
   resize: none;
 }
 .button_form{
-    width: 15vw;
-    height: 2.5vw;;
-    margin-top:0.6vw;
-    margin-left:11vw;
+    width: 60%;
+    height: 2.5vw;
+    margin-top:2%;
+    margin-left:20%;
     border-radius: 2vw;
-    position: relative;
 }
 #contact_title{
-    margin-bottom: 2vw;
+    margin-bottom: 5%;
 }
 /*FOOTER SITE CSS*/
 .footer_site{
-    background-color: black;
+    background-image: linear-gradient(to BOTTOM, rgba(0,0,0,0.0), rgb(68, 68, 68));
     height: 20%;
-    width: 85vw;
-    margin-top:-10.1vw;
-    margin-left:10vw;
+    width: 100%;
+    margin-top:-15.1%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 /*Background Wrapper*/
 .wrapper_center{
-    margin-left:15vw;
-    width: 75vw;
+    margin-left:14.1%;
+    width: 75%;
     background-color:rgba(0, 0, 0, 0.548);
     height: 100%;
 }

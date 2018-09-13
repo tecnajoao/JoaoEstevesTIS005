@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./my_scripts/script_parallax.js"></script>
@@ -87,7 +87,7 @@
     <section class="background_homepage" id="homepage">
         <div class="sidebar_logo"></div>
         <div class="wrapper_right_home font_pages" id="home">
-            <span class="title_size_font_home">Hello ! <br> I'm João Esteves.</span>
+            <span class="title_size_font_home">Hello ! <br> I'm Tecna João.</span>
             <!--<p class="intro_paragraph_home_size_font">
                         </p>-->
         </div>
@@ -105,8 +105,9 @@
         <div class="font_pages titles_size font_pages titles_size wrapper_center">
             <div>ABOUT ME</div>
             <div id="photo_about"></div>
-            <div id="font_size_text">Hello ! I'm João Esteves, and i'm 23 yeas old. Actualy i'm studying in an IT course
-                what is equivalent to the 12th grade. I love so much programming, computers and all technology forms. </div>
+            <div id="_text">Hello ! I'm João Esteves, and i'm 23 yeas old. Actualy i'm studying in an IT course
+                what is equivalent to the 12th grade. I love so much programming, computers and all technology forms.
+            </div>
         </div>
     </section>
     <!--Skills HTML-->
@@ -191,11 +192,11 @@
         <div class="wrapper_center">
             <div class="font_pages titles_size ">EXPERIENCE</div>
             <div class="slideshow_container_experience">
-                
+
                 <a class="prev_btn_expe ease_btn" id="prev_btn_left" onclick="plusSlides(-1)">«</a>
                 <a class="next_btn_expe ease_btn" id="next_btn_right" onclick="plusSlides(1)">»</a>
-                
-                
+
+
                 <div id="expericence_script" class="slides_experience fade ">
                     <a class="background_experience_case experience_1">
                         <div class="title_experience">TITLE 1: EXPERIENCE 1</div>
@@ -214,7 +215,7 @@
                         <div class="caption_experience">Caption Text</div>
                     </a>
                 </div>
-                <div id="ezxpericence_script" class="slides_experience fade">
+                <div id="expericence_script" class="slides_experience fade">
                     <a class="background_experience_case experience_4">
                         <div class="title_experience">TITLE 4: EXPERIENCE 4</div>
                         <div class="caption_experience">Caption Text</div>
@@ -246,10 +247,13 @@
         <div class="wrapper_center">
             <div class="font_pages titles_size">DOWNLOAD CV</div>
             <div id="cv_en_wrapper" class="cv_wrapper">
-                <div class="font_pages font_resume">Download English Resume</div>
-                <!--div href="./cv/resume_english_joao.pdf" class="gradient_filter">
-                </div-->
-                <a class="download_cv_box english_resume_image"></a>
+                <div class="download_cv_box">
+                    <div href="#something" class="gradient_filter" >
+                    </div>
+                    <div class="font_pages ">
+                        <a id="something" class="something_download" href="./cv/resume_portuguese_joao.pdf" target="_blank">Download HERE !</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -259,23 +263,25 @@
             <div class="contact_wrapper">
                 <div class="font_pages" id="subtitles_contact">Send me a e-mail</div>
                 <form name="myform_contact" method="POST" action="https://formspree.io/tecnajoao@gmail.com" onsubmit="return validateForm();">
-                    <input class="post_form" id="email_field" name="email" placeholder="Your email*" type="email">
-                    <input class="post_form" id="name_field" name="name" placeholder="Your Name*" type="text">
-                    <input class="post_form" id="subject_field" name="subject" placeholder="Subject*" type="text">
-                    <textarea class="post_form" id="message_field" name="message" placeholder="Your MESSAGE*"></textarea>
+                    <input class="post_form" id="email_field" name="email" placeholder="Your email*" type="email"
+                        required>
+                    <input class="post_form" id="name_field" name="name" placeholder="Your Name*" type="text" required>
+                    <input class="post_form" id="subject_field" name="subject" placeholder="Subject*" type="text"
+                        required>
+                    <textarea class="post_form" id="message_field" name="message" placeholder="Your MESSAGE*" required></textarea>
                     <button class="button_form" type="submit" value="Submit">Send</button>
                 </form>
             </div>
         </div>
+        <!--Footer TecnaJoao-->
+        <footer class="font_pages footer_site">
+            @PowerBy: TecnaJoao
+            <div id="date"></div>
+            <script>
+                document.getElementById("date").innerHTML = Date();
+            </script>
+        </footer>
     </section>
-    <!--Footer TecnaJoao-->
-    <footer class="font_pages footer_site">
-        @PowerBy: TecnaJoao
-        <div id="date"></div>
-        <script>
-            document.getElementById("date").innerHTML = Date();
-        </script>
-    </footer>
 </body>
 
 </html>
