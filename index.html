@@ -9,43 +9,41 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower" />
+    <!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./my_scripts/script_parallax.js"></script>
-    <script type="text/javascript" src="./my_scripts/slideshow_animation.js"></script>
-    <!--script>
+    <script type="text/javascript" src="./my_scripts/slideshow_animation.js"></script-->
+    <script>
         //This code is provisory
-        
-        var slideIndex = 0 ;
+
+        var slideIndex = 0;
         showSlides(slideIndex);
-        
+
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
-        
+
         function currentSlide(n) {
             showSlides(slideIndex = n);
         }
 
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("slides_experience");
-        var circles_selected = document.getElementsByClassName("circles_select");
-        if (n > slides.length)
-        {slideIndex = 1}    
-        if (n < 1)
-        {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < circles_selected.length; i++) {
-            circles_selected[i].className = circles_selected[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "flex";  
-        circles_selected[slideIndex-1].className += " active";
-    };
-    
-    </script-->
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slides_experience");
+            var circles_selected = document.getElementsByClassName("circles_select");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < circles_selected.length; i++) {
+                circles_selected[i].className = circles_selected[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "flex";
+            circles_selected[slideIndex - 1].className += " active";
+        };
+
+    </script>
 </head>
 
 <body>
@@ -195,36 +193,34 @@
 
                 <a class="prev_btn_expe ease_btn" id="prev_btn_left" onclick="plusSlides(-1)">«</a>
                 <a class="next_btn_expe ease_btn" id="next_btn_right" onclick="plusSlides(1)">»</a>
-
-
-                <div id="expericence_script" class="slides_experience fade ">
+                <div class="slides_experience fade">
                     <a class="background_experience_case experience_1">
-                        <div class="title_experience">TITLE 1: EXPERIENCE 1</div>
-                        <div class="caption_experience">Caption Text</div>
+                        <div class="title_experience font_pages ">TITLE 1: EXPERIENCE 1</div>
+                        <div class="font_pages caption_experience">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero omnis vitae voluptatibus autem voluptates nulla dignissimos fuga exercitationem quam fugiat. Nisi dolores eveniet dolorem non quis aut illo modi beatae!</div>
                     </a>
                 </div>
-                <div id="expericence_script" class="slides_experience fade">
+                <div class="slides_experience fade">
                     <a class="background_experience_case experience_2">
-                        <div class="title_experience">TITLE 2: EXPERIENCE 2</div>
-                        <div class="caption_experience">Caption Text</div>
+                        <div class="font_pages title_experience ">TITLE 2: EXPERIENCE 2</div>
+                        <div class="font_pages caption_experience">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero omnis vitae voluptatibus autem voluptates nulla dignissimos fuga exercitationem quam fugiat. Nisi dolores eveniet dolorem non quis aut illo modi beatae!</div>
                     </a>
                 </div>
-                <div id="expericence_script" class="slides_experience fade">
+                <div class="slides_experience fade">
                     <a class="background_experience_case experience_3">
-                        <div class="title_experience">TITLE 3: EXPERIENCE 3</div>
-                        <div class="caption_experience">Caption Text</div>
+                        <div class="font_pages title_experience">TITLE 3: EXPERIENCE 3</div>
+                        <div class="font_pages caption_experience">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero omnis vitae voluptatibus autem voluptates nulla dignissimos fuga exercitationem quam fugiat. Nisi dolores eveniet dolorem non quis aut illo modi beatae!</div>
                     </a>
                 </div>
-                <div id="expericence_script" class="slides_experience fade">
+                <div class="slides_experience fade">
                     <a class="background_experience_case experience_4">
-                        <div class="title_experience">TITLE 4: EXPERIENCE 4</div>
-                        <div class="caption_experience">Caption Text</div>
+                        <div class="font_pages title_experience">TITLE 4: EXPERIENCE 4</div>
+                        <div class="font_pages caption_experience">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero omnis vitae voluptatibus autem voluptates nulla dignissimos fuga exercitationem quam fugiat. Nisi dolores eveniet dolorem non quis aut illo modi beatae!</div>
                     </a>
                 </div>
-                <div id="expericence_script" class="slides_experience fade">
+                <div class="slides_experience fade">
                     <a class="background_experience_case experience_5">
-                        <div class="title_experience">TITLE 5: EXPERIENCE 5</div>
-                        <div class="caption_experience">Caption Text</div>
+                        <div class="font_pages title_experience">TITLE 5: EXPERIENCE 5</div>
+                        <div class="font_pages caption_experience">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero omnis vitae voluptatibus autem voluptates nulla dignissimos fuga exercitationem quam fugiat. Nisi dolores eveniet dolorem non quis aut illo modi beatae!</div>
                     </a>
                 </div>
             </div>
@@ -248,10 +244,11 @@
             <div class="font_pages titles_size">DOWNLOAD CV</div>
             <div id="cv_en_wrapper" class="cv_wrapper">
                 <div class="download_cv_box">
-                    <div href="#something" class="gradient_filter" >
+                    <div href="#something" class="gradient_filter">
                     </div>
                     <div class="font_pages ">
-                        <a id="something" class="something_download" href="./cv/resume_portuguese_joao.pdf" target="_blank">Download HERE !</a>
+                        <a id="something" class="something_download" href="./cv/resume_portuguese_joao.pdf" target="_blank">Download
+                            HERE !</a>
                     </div>
                 </div>
             </div>
