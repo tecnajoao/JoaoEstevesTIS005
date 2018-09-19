@@ -341,8 +341,7 @@ section{
     background-image: url("./img/image5.jpg");
 }
 /*EDUCATION CSS SECTION*/
-#education{
-}
+
 .background_education{
     background-image: url("./img/black-and-white-blackboard-business-356043.jpg");
 }
@@ -484,7 +483,7 @@ section{
     background-color: rgba(0, 0, 0, 0.418);
     margin: auto;
 }
-/
+
 @media only screen and (max-width: 600px) {
     .html {width: 45%; background-color: #4CAF50;} 
     .css {width: 40%; background-color: #2196F3;} 
