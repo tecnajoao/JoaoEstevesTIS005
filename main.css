@@ -22,6 +22,7 @@ section{
     height: 100%;
 }
 /* ------ SIDEBAR NAVIGATION------- */
+
 .navigation_panel{
     width: 14vw;
     height:100%;
@@ -125,7 +126,7 @@ section{
     height: 1.5vw;
     margin: auto;
   }
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 000px) {
     .little_space{
         height: 5vw;
         margin: auto;
@@ -258,17 +259,7 @@ section{
     #center_title, .percentage_skills{display: none;}
     .skills_logo{ margin-left:50%;}
 }
-@media only screen and (max-width: 700px) {
-    .html {width: 45%; background-color: #4CAF50;} 
-    .css {width: 40%; background-color: #2196F3;} 
-    .js {width: 20%; background-color: #f44336;} 
-    .php {width: 17.5%; background-color: #808080;}
-    .office{width: 46.5%; background-color: blueviolet;}
-    .java{width: 32.5%; background-color:rgb(206, 228, 9);}
-    .languages_c{width: 27.5%; background-color:rgb(255, 0, 0);}
-    .hardware{width: 48%; background-color: rgb(179, 41, 41);}
-    .databases{width: 25%; background-color:rgb(198, 9, 198);}
-}
+
 /*EXPERIENCE CSS SECTION*/
 .background_experience{
     background-image: url("./img/achievement-agreement-arms-1068523.jpg");
@@ -360,6 +351,8 @@ section{
     background-image: url("./img/image5.jpg");
 }
 /*EDUCATION CSS SECTION*/
+#education{
+}
 .background_education{
     background-image: url("./img/black-and-white-blackboard-business-356043.jpg");
 }
@@ -381,7 +374,6 @@ section{
 }
 #something{
     color:rgba(18, 5, 78, 0.678);
-
 }
 .something_download:hover{
     background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
@@ -502,5 +494,113 @@ section{
     background-color: rgba(0, 0, 0, 0.418);
     margin: auto;
 }
-/*TESTS*/
-/* Slideshow container */
+@media only screen and (max-width: 700px) {
+    .html {width: 45%; background-color: #4CAF50;} 
+    .css {width: 40%; background-color: #2196F3;} 
+    .js {width: 20%; background-color: #f44336;} 
+    .php {width: 17.5%; background-color: #808080;}
+    .office{width: 46.5%; background-color: blueviolet;}
+    .java{width: 32.5%; background-color:rgb(206, 228, 9);}
+    .languages_c{width: 27.5%; background-color:rgb(255, 0, 0);}
+    .hardware{width: 48%; background-color: rgb(179, 41, 41);}
+    .databases{width: 25%; background-color:rgb(198, 9, 198);}
+}
+@media only screen and (max-width: 600px) {
+    .navigation_panel{
+        width: 20vw;
+    }
+    .btn{
+        width: 8vw; /*PASSAR PARA 6VW E COLOR BLACK*/
+        height: 8vw;
+        z-index: 3;
+        position: relative;
+        float: left;
+        clear: left; 
+    }
+    .first_btn{
+        margin-top:18vw;
+    }
+    img.sidebar_icon{
+        background-size: contain;
+        background-position: center;
+        width: 5vw;
+        height: 5vw;
+        margin-left: 1vw;
+        z-index: 3;
+        position: fixed !important;
+    }   
+    .sidebar_name{
+        color: transparent;
+        float: right;
+        position: relative;
+        font-size: 2vw;
+        font-family: cursive;
+        margin-top: 3vw;
+        margin-left:50%;
+        margin-right: 1vw;
+        opacity: 0;
+        font-weight: bold;
+    }
+    #sidebar_black{
+        width: 8vw;
+        margin-top:20%;
+        height: 58vw;
+        margin-top: 15vw;
+        background-color: rgba(0, 0, 0, 0.418);
+        position: absolute !important;
+        z-index: 2;
+    }
+}
+    @media only screen and (max-width: 600px) {
+    .sidebar_logo {
+        background-image: url("icons/tecnajoao_logo.png");
+        width: 70vw;
+        height: 50vw;
+        background-size: cover;
+        background-position: center;
+        margin:auto;
+        margin-top:2vw;
+    }
+    .title_size_font_home{
+        font-size: 10vw ;
+    }
+    
+    .background_homepage{
+        background-image: url("./img/Organic_Lines_4K_Motion_Background_Loop.gif");
+    }
+    #home{
+        margin-left:27vw;
+        margin-top: 3vw;
+        width: 45vw;
+        height: 45vw;
+        border-radius: 4vw;
+        background-color:rgba(32, 151, 219, 0.247);
+    }
+    .wrapper_right_home{
+        font-family: 'Indie Flower', cursive;
+        z-index: 2;
+        position: relative;
+    }
+    .wrapper_btn_bottom_home{
+        margin-left:25vw;
+        margin-top: 3vw;
+        width: 50vw;
+        height: 50vw;
+    }
+    .btns_home{
+        border-radius: 2vw;
+        width: 22vw;
+        padding-top:0.5vw;
+        padding-bottom:0.5vw;
+        height: 5vw;
+        background-color:rgba(32, 151, 219, 0.247);    
+        font-size: 4vw;
+        text-align: center;
+    }
+    .contact_me{
+        float: left;
+    }
+    .download_cv{
+        float: right;
+    }
+}
