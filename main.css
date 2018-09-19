@@ -126,12 +126,7 @@ section{
     height: 1.5vw;
     margin: auto;
   }
-  @media only screen and (max-width: 000px) {
-    .little_space{
-        height: 5vw;
-        margin: auto;
-      }
-}
+
 /*HOMEPAGE CSS*/
 .sidebar_logo {
     background-image: url("icons/tecnajoao_logo.png");
@@ -214,8 +209,6 @@ section{
     margin: auto;
     width: 50%;
 }
-
-
 .skills {
     margin: auto;
     width: 100%;
@@ -255,10 +248,7 @@ section{
 .hardware{width: 96%; background-color: rgb(179, 41, 41);}
 .databases{width: 50%; background-color:rgb(198, 9, 198);}
 
-@media only screen and (max-width: 800px) {
-    #center_title, .percentage_skills{display: none;}
-    .skills_logo{ margin-left:50%;}
-}
+
 
 /*EXPERIENCE CSS SECTION*/
 .background_experience{
@@ -494,7 +484,8 @@ section{
     background-color: rgba(0, 0, 0, 0.418);
     margin: auto;
 }
-@media only screen and (max-width: 700px) {
+/
+@media only screen and (max-width: 600px) {
     .html {width: 45%; background-color: #4CAF50;} 
     .css {width: 40%; background-color: #2196F3;} 
     .js {width: 20%; background-color: #f44336;} 
@@ -551,7 +542,32 @@ section{
         z-index: 2;
     }
 }
-    @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+    div.little_space{
+        height: 5vw;
+        margin: auto;
+      }
+}
+@media only screen and (max-width: 800px) {
+    #center_title, .percentage_skills{display: none;}
+    .skills_logo{ 
+        margin-left: 0%;
+        width: 9vw;
+        height: 9vw;
+        padding:0.2vw;
+        padding-bottom: 0.1vw;
+        float: left;
+        background-size: cover;
+        z-index: 3;
+        }
+    .skills {
+        margin: auto;
+        padding: 0.2vw;
+        height: 9vw;
+        z-index: 3;
+    }
+}
+@media only screen and (max-width: 600px) {
     .sidebar_logo {
         background-image: url("icons/tecnajoao_logo.png");
         width: 70vw;
