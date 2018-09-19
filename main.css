@@ -119,11 +119,18 @@ section{
 .titles_size{
     font-size: 5vw;
 }
+
 /*LITTLE SPACE BETWEEN THINGS*/
 .little_space{
     height: 1.5vw;
     margin: auto;
   }
+  @media only screen and (max-width: 700px) {
+    .little_space{
+        height: 5vw;
+        margin: auto;
+      }
+}
 /*HOMEPAGE CSS*/
 .sidebar_logo {
     background-image: url("icons/tecnajoao_logo.png");
@@ -204,8 +211,10 @@ section{
 #center_title{
     position: relative;
     margin: auto;
-    width: 10vw;
+    width: 50%;
 }
+
+
 .skills {
     margin: auto;
     width: 100%;
@@ -244,6 +253,22 @@ section{
 .languages_c{width: 55%; background-color:rgb(255, 0, 0);}
 .hardware{width: 96%; background-color: rgb(179, 41, 41);}
 .databases{width: 50%; background-color:rgb(198, 9, 198);}
+
+@media only screen and (max-width: 800px) {
+    #center_title, .percentage_skills{display: none;}
+    .skills_logo{ margin-left:50%;}
+}
+@media only screen and (max-width: 700px) {
+    .html {width: 45%; background-color: #4CAF50;} 
+    .css {width: 40%; background-color: #2196F3;} 
+    .js {width: 20%; background-color: #f44336;} 
+    .php {width: 17.5%; background-color: #808080;}
+    .office{width: 46.5%; background-color: blueviolet;}
+    .java{width: 32.5%; background-color:rgb(206, 228, 9);}
+    .languages_c{width: 27.5%; background-color:rgb(255, 0, 0);}
+    .hardware{width: 48%; background-color: rgb(179, 41, 41);}
+    .databases{width: 25%; background-color:rgb(198, 9, 198);}
+}
 /*EXPERIENCE CSS SECTION*/
 .background_experience{
     background-image: url("./img/achievement-agreement-arms-1068523.jpg");
@@ -468,9 +493,14 @@ section{
     background-color:rgba(0, 0, 0, 0.548);
     height: 100%;
 }
-#font_size_text, #_text{
+#font_size_text{
     font-size: 2vw;
 }
-
+._text{
+    font-size: 2vw;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.418);
+    margin: auto;
+}
 /*TESTS*/
 /* Slideshow container */
