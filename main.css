@@ -191,6 +191,7 @@ section{
     height: 25vw;
     border-radius:12.5vw;
     background-size:cover; 
+    background-position: center;
     margin: auto;
 }
 /*SKILLS CSS SECTION*/
@@ -280,13 +281,13 @@ section{
     font-size: 3vw;
     z-index: 5;
 }
+
 .next_btn_expe:hover, .prev_btn_expe:hover{
     background-color: rgba(255, 255, 255, 0.37);
 }
 .fade{
     animation-name: fade;
     animation-duration: 1.5s;
-    
 }
 #prev_btn_left{
     border-radius: 0 2vw 2vw 0;
@@ -296,8 +297,14 @@ section{
     border-radius: 2vw 0 0 2vw;
 }
 .caption_experience{
-    margin-top: 40%;
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 25vw;
     background-color:rgba(0, 0, 0, 0.678);
+}
+div.title_experience{
+    color:white;
+    font-size:2vw;
 }
 .circles_select{
     cursor: pointer;
@@ -561,6 +568,22 @@ section{
         height: 9vw;
         z-index: 3;
     }
+    #photo_about{
+        background-image: url("./img/foto_eu.jpg");
+        width: 25vw;
+        height: 35vw;
+        border-radius:12.5vw;
+        background-size:cover; 
+        background-position: center;
+        margin: auto;
+    }
+    ._text{
+        font-size: 2.5vw;
+        margin-top:1vw;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.418);
+        margin: auto;
+    }
 }
 @media only screen and (max-width: 468px) {
     .sidebar_logo {
@@ -613,6 +636,26 @@ section{
     }
     .download_cv{
         float: right;
+    }
+    .caption_experience{
+        margin-top: 20%;
+        margin-left: 17%;
+        width: 40vw;
+        background-color:rgba(0, 0, 0, 0.678);
+        font-size: 2.5VW;
+    }
+    div.title_experience{
+        color:white;
+        font-size:3vw;
+    }
+    .circles_select{
+        cursor: pointer;
+        height: 1vw;
+        width: 1vw;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0.2vw;
     }
 }
 @media only screen and (max-width: 600px) {
